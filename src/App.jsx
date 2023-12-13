@@ -3,15 +3,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Card, Navbar } from "react-bootstrap";
+import { Card, Nav, Navbar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 function App() {
   return (
     <>
       <Navbar expand="lg">
-        <Container>
-          <Navbar.Brand>HomeLogo</Navbar.Brand>
+        <Container className="navContainer">
+          <Navbar.Brand href="">HomeLogo</Navbar.Brand>
+          <Navbar id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="">About</Nav.Link>
+              <Nav.Link href="">Posts</Nav.Link>
+            </Nav>
+          </Navbar>
         </Container>
       </Navbar>
       <Container fluid className="container">
@@ -77,6 +83,21 @@ function App() {
                 illum excepturi inventore amet dicta fuga magnam?
               </Card.Text>
             </Card.Body>{" "}
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Card.Body className="card">
+              <Card.Title>Card Title 5</Card.Title>
+              <Card.Subtitle>Subtitle</Card.Subtitle>
+              <Card.Text>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt consequuntur suscipit, debitis atque ipsa dolore
+                consectetur quam, quos vitae sed nostrum tempore reprehenderit
+                illum excepturi inventore amet dicta fuga magnam?
+              </Card.Text>
+              <Button variant="warning">Important</Button>
+            </Card.Body>
           </Col>
         </Row>
       </Container>
