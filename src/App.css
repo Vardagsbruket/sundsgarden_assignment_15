@@ -8,14 +8,23 @@
 .container {
   margin: 2rem;
 }
+.header {
+  margin: 0 2rem;
+}
 .navContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 80vw;
   width: 100%;
-
-  margin: 3rem;
+  border: 1px solid grey;
+  padding: 3rem;
+  margin: 2rem 0rem;
+  border-radius: 20px;
+}
+#navItem,
+#basic-navbar-nav {
+  margin: 0 2rem;
 }
 .card {
   margin: 1rem;

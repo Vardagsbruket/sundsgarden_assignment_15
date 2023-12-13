@@ -9,9 +9,11 @@ import Button from "react-bootstrap/Button";
 function App() {
   return (
     <>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className="header">
         <Container className="navContainer">
-          <Navbar.Brand href="">HomeLogo</Navbar.Brand>
+          <Navbar.Brand href="" id="navItem">
+            HomeLogo
+          </Navbar.Brand>
           <Navbar id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="">About</Nav.Link>
